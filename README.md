@@ -1,4 +1,4 @@
-# Tips for Spring boot  
+# Tips for Spring boot used fpr spring batch (JavaConfig)  and Spring integration 
 # # 1. Spring boot failing to start because no database is provided
 
 Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
@@ -22,3 +22,10 @@ Cannot determine embedded database driver class for database type NONE
 
 
 
+# # 2. Spring boot failing: NoUniqueBeanDefinitionException: No qualifying bean of type
+
+- Missing configuration 
+- @Primary keyword missing often
+
+
+# # 3. No datasoucre found for Spring batch 
