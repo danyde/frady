@@ -15,9 +15,12 @@ Cannot determine embedded database driver class for database type NONE
 
 1. In pom.xml:  add yaur database dependencies. (HSQL db for the testing purpose can resolve yaur issue)  
 2. Disable  the datasource auto-configation: If you prefer to configure it yaurself . Add this line in yaur spring bootstrap class: 
+```java
+
                 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class, 
                                                     DataSourceTransactionManagerAutoConfiguration.class, 
                                                     HibernateJpaAutoConfiguration.class})
+```
 
 You have however to configure yaur @Primary datasource in case of multi-datasources case.
 
